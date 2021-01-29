@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <h1><i> The Game That Is ENDLESS </i></h1>
 <body style="background-color:lightgreen;">
+</body>
 <style>
 canvas {
     border:1px solid #d3d3d3;
@@ -100,8 +101,8 @@ function updateGameArea() {
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "green", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        myObstacles.push(new component(10, height, "black", x, 0));
+        myObstacles.push(new component(10, x - height - gap, "black", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].speedX = -1;
